@@ -1,2 +1,3 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_/var/lib/odoo/addons/18.0/pc_management_/var/lib/odoo/addons/18.0/pc_management,/var/lib/odoo/addons/18.0/pc_management./var/lib/odoo/addons/18.0/pc_management,model_/var/lib/odoo/addons/18.0/pc_management_/var/lib/odoo/addons/18.0/pc_management,base.group_user,1,1,1,1
+id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
+access_pc_component,pc.component,model_pc_component,,1,1,1,1
+access_pc_computer,pc.computer,model_pc_computer,,1,1,1,1
