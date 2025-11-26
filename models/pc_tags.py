@@ -1,6 +1,6 @@
 from odoo import models, fields
 
-class Tag(models.Model):
+class PcTag(models.Model):
     _name = "pc.tag"
     _description = "Etiqueta de PC"
 
