@@ -17,9 +17,15 @@ Módulo para gestionar PCs, componentes o inventario de equipos.
     'depends': ['base'],
 
     'data': [
-        'views/views.xml',
-        'views/templates.xml',
         'security/ir.model.access.csv',
+        
+        'views/pc_component_views.xml',
+        'views/pc_computer_views.xml',
+        'views/menu.xml',
+        'views/templates.xml',
+        'views/tags_views.xml',
+        'views/views.xml',
+
     ],
 
     'demo': [

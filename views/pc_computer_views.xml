@@ -8,26 +8,26 @@
                     <group>
                         <field name="name"/>
                         <field name="user_id"/>
-                        <field name="components_ids" widget="many2many_tags"/>
+                        <field name="components_ids" />
                         <field name="ultima_mod"/>
-                        <field name="precio_total" readonly="1"/>
+                        <field name="precio_total" />
                         <field name="incidencias"/>
-                        <field name="tags"/>
+                        <field name="tags" widget="many2many_tags"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
 
-    <record id="view_pc_computer_tree" model="ir.ui.view">
-        <field name="name">pc.computer.tree</field>
+    <record id="view_pc_computer_list" model="ir.ui.view">
+        <field name="name">pc.computer.list</field>
         <field name="model">pc.computer</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="name"/>
                 <field name="user_id"/>
                 <field name="precio_total"/>
-            </tree>
+            </list>
         </field>
     </record>
 </odoo>

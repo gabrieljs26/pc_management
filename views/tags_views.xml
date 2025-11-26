@@ -1,0 +1,39 @@
+<odoo>
+    
+    <record id="view_pc_tags_form" model="ir.ui.view">
+        <field name="name">pc.tags.form</field>
+        <field name="model">pc.tags</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_pc_tags_list" model="ir.ui.view">
+        <field name="name">pc.tags.list</field>
+        <field name="model">pc.tags</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+   
+    <record id="action_pc_tags" model="ir.actions.act_window">
+        <field name="name">Tags</field>
+        <field name="res_model">pc.tags</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    
+    <menuitem id="pc_menu_tags"
+              parent="pc_menu"
+              name="Tags"
+              action="action_pc_tags"/>
+</odoo>
