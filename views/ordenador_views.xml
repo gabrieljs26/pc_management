@@ -1,30 +1,30 @@
 <odoo>
-    <record id="view_pc_computer_form" model="ir.ui.view">
-        <field name="name">pc.computer.form</field>
-        <field name="model">pc.computer</field>
+    <record id="view_pc_form" model="ir.ui.view">
+        <field name="name">pc.ordenador.form</field>
+        <field name="model">pc.ordenador</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
-                        <field name="name"/>
+                        <field name="numero_equipo"/>
                         <field name="user_id"/>
-                        <field name="components_ids" />
+                        <field name="components_ids"/>
                         <field name="ultima_mod"/>
-                        <field name="precio_total" />
-                        <field name="incidencias"/>
+                        <field name="precio_total"/>
                         <field name="tags" widget="many2many_tags"/>
+                        <field name="incidencias"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
 
-    <record id="view_pc_computer_list" model="ir.ui.view">
-        <field name="name">pc.computer.list</field>
-        <field name="model">pc.computer</field>
+    <record id="view_pc_list" model="ir.ui.view">
+        <field name="name">pc.ordenador.list</field>
+        <field name="model">pc.ordenador</field>
         <field name="arch" type="xml">
             <list>
-                <field name="name"/>
+                <field name="numero_equipo"/>
                 <field name="user_id"/>
                 <field name="precio_total"/>
             </list>

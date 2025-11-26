@@ -1,0 +1,22 @@
+<odoo>
+    <menuitem id="pc_menu" name="Gestión PCs"/>
+
+    <menuitem id="pc_sub_menu_ordenadores" parent="pc_menu" name="Ordenadores"/>
+
+    <menuitem id="pc_sub_menu_componentes" parent="pc_menu" name="Componentes"/>
+
+    <record id="action_pc" model="ir.actions.act_window">
+        <field name="name">Ordenadores</field>
+        <field name="res_model">pc.ordenador</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_component" model="ir.actions.act_window">
+        <field name="name">Componentes</field>
+        <field name="res_model">pc.component</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="pc_menu_ordenadores_action" parent="pc_sub_menu_ordenadores" action="action_pc"/>
+    <menuitem id="pc_menu_component_action" parent="pc_sub_menu_componentes" action="action_component"/>
+</odoo>

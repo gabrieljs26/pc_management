@@ -1,34 +1,27 @@
-# -*- coding: utf-8 -*-
 {
-    'name': "PC Management",
-
-    'summary': "Gestión de ordenadores en Odoo",
-
+    'name': 'Gestión de PCs de Empresa',
+    'version': '1.0',
+    'author': 'Alejandro Ibáñez',
+    'category': 'Tools',
+    'summary': 'Gestión de ordenadores, componentes y mantenimiento.',
     'description': """
-Módulo para gestionar PCs, componentes o inventario de equipos.
-    """,
-
-    'author': "Gabi",
-    'website': "https://github.com/tuusuario/pc_management",
-
-    'category': 'Inventory',
-    'version': '0.1',
-
-    'depends': ['base'],
-
+Módulo para gestionar ordenadores, componentes, precios, incidencias y usuarios
+asociados. Incluye relaciones Many2one, Many2many, restricciones y tags.
+""",
+    'depends': [
+        'base',
+    ],
     'data': [
         'security/ir.model.access.csv',
-        
-        'views/pc_component_views.xml',
-        'views/pc_computer_views.xml',
-        'views/menu.xml',
+
+        'views/componente_views.xml',
+        'views/ordenador_views.xml',
+        'views/menus.xml',
         'views/templates.xml',
         'views/tags_views.xml',
         'views/views.xml',
-
     ],
-
-    'demo': [
-        'demo/demo.xml',
-    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
 }

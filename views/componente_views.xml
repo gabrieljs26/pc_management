@@ -1,12 +1,12 @@
 <odoo>
-    <record id="view_pc_component_form" model="ir.ui.view">
+    <record id="view_component_form" model="ir.ui.view">
         <field name="name">pc.component.form</field>
         <field name="model">pc.component</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
-                        <field name="name"/>
+                        <field name="nombre"/>
                         <field name="especificaciones"/>
                         <field name="precio"/>
                     </group>
@@ -15,12 +15,12 @@
         </field>
     </record>
 
-    <record id="view_pc_component_list" model="ir.ui.view">
+    <record id="view_component_list" model="ir.ui.view">
         <field name="name">pc.component.list</field>
         <field name="model">pc.component</field>
         <field name="arch" type="xml">
             <list>
-                <field name="name"/>
+                <field name="nombre"/>
                 <field name="precio"/>
             </list>
         </field>

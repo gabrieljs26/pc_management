@@ -1,4 +1,4 @@
-id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_pc_component,pc.component,model_pc_component,base.group_user,1,1,1,1
-access_pc_computer,pc.computer,model_pc_computer,base.group_user,1,1,1,1
-accesss_pc_tags,pc.tags,model_pc_tags,base.group_user,1,1,1,1
+access_pc_ordenador,pc.ordenador,model_pc_ordenador,base.group_user,1,1,1,1
+access_pc_tags,pc.tags,model_pc_tags,base.group_user,1,1,1,1
