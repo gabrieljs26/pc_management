@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class /var/lib/odoo/addons/18.0/pc_management(models.Model):
-#     _name = '/var/lib/odoo/addons/18.0/pc_management./var/lib/odoo/addons/18.0/pc_management'
-#     _description = '/var/lib/odoo/addons/18.0/pc_management./var/lib/odoo/addons/18.0/pc_management'
+# class pc_management(models.Model):
+#     _name = 'pc_management.pc_management'
+#     _description = 'pc_management.pc_management'
 
 #     name = fields.Char()
 #     value = fields.Integer()

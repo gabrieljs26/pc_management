@@ -1,7 +1,7 @@
 from odoo import models, fields
 
-class PcTags(models.Model):
+class Tags(models.Model):
     _name = "pc.tags"
-    _description = "Etiqueta de PC"
+    _description = "Tags de Sistema Operativo"
 
-    name = fields.Char(string="Nombre de la etiqueta")
+    name = fields.Char(string="Etiqueta")
